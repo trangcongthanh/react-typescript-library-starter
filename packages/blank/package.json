@@ -1,0 +1,19 @@
+{
+	"name": "@packages/blank",
+	"version": "0.0.1",
+	"description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+	"scripts": {
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --external react --watch",
+		"build": "tsup src/index.ts --format esm,cjs --dts --external react",
+		"test": "vitest"
+	},
+	"devDependencies": {
+    "@packages/tsconfigs": "workspace:*"
+  }
+}
