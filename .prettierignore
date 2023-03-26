@@ -1,3 +1,5 @@
 dist
 storybook-static
 .turbo
+.husky
+.prettierignore
